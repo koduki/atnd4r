@@ -183,11 +183,11 @@ module Atnd4r
     def initialize(event)
       # 共通データ
       @accepted = AtndAPIUtil::to_ruby_type event.elements['accepted']
-      @event_id = AtndAPIUtil::to_ruby_type event.elements['event-id']
-      @updated_at = AtndAPIUtil::to_ruby_type event.elements['updated-at']
+      @event_id = AtndAPIUtil::to_ruby_type event.elements['event_id']
+      @updated_at = AtndAPIUtil::to_ruby_type event.elements['updated_at']
       @title = AtndAPIUtil::to_ruby_type event.elements['title']
       @waiting = AtndAPIUtil::to_ruby_type event.elements['waiting']
-      @event_url = AtndAPIUtil::to_ruby_type event.elements['event-url']
+      @event_url = AtndAPIUtil::to_ruby_type event.elements['event_url']
       @limit = AtndAPIUtil::to_ruby_type event.elements['limit']
       
       # 出席情報の場合
@@ -199,15 +199,15 @@ module Atnd4r
       # イベント情報の場合
       @place = AtndAPIUtil::to_ruby_type event.elements['place']
       @lon = AtndAPIUtil::to_ruby_type event.elements['lon']
-      @ended_at = AtndAPIUtil::to_ruby_type event.elements['ended-at']
+      @ended_at = AtndAPIUtil::to_ruby_type event.elements['ended_at']
       @url = AtndAPIUtil::to_ruby_type event.elements['url']
-      @owner_nickname = AtndAPIUtil::to_ruby_type event.elements['owner-nickname']
+      @owner_nickname = AtndAPIUtil::to_ruby_type event.elements['owner_nickname']
       @catch = AtndAPIUtil::to_ruby_type event.elements['catch']
       @description = AtndAPIUtil::to_ruby_type event.elements['description']
-      @owner_id = AtndAPIUtil::to_ruby_type event.elements['owner-id']
+      @owner_id = AtndAPIUtil::to_ruby_type event.elements['owner_id']
       @lat = AtndAPIUtil::to_ruby_type event.elements['lat']
       @address = AtndAPIUtil::to_ruby_type event.elements['address']
-      @started_at = AtndAPIUtil::to_ruby_type event.elements['started-at']
+      @started_at = AtndAPIUtil::to_ruby_type event.elements['started_at']
     end
     
     attr_reader :accepted, :event_id, :updated_at, :title, :waiting, :event_url, :limit
@@ -219,7 +219,7 @@ module Atnd4r
     def initialize(user)
       @status = AtndAPIUtil::to_ruby_type user.elements['status']
       @nickname = AtndAPIUtil::to_ruby_type user.elements['nickname']
-      @user_id = AtndAPIUtil::to_ruby_type user.elements['user-id']
+      @user_id = AtndAPIUtil::to_ruby_type user.elements['user_id']
     end
     attr_reader :status, :nickname, :user_id
   end

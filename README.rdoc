@@ -2,13 +2,14 @@
 
 ATND WebAPI wrapper for Ruby.
 * Project Website - http://github.com/sugamasao/atnd4r/tree/master
-
+* 最新のapiが返すXMLの仕様と異なっていたので、一部修正しました.
 == Developers
+* koduki(ちょっと改修しただけ)
 * {sugamasao}[http://sugamasao.dip.jp/] <sugamasao@gmail.com>
 
 == Features/Problems
 
-* Ruby 1.8.7 での動作確認を行っています
+* Ruby 1.9.2 での動作確認を行っています
 
 == Synopsis
 
