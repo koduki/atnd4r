@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["sugamasao", "koduki"]
   s.date = %q{2010-11-28}
-  s.email = %q{pascalm3@gmail.com}
+  s.email = %q{koduki.p.m@gmail.com}
   s.extra_rdoc_files = [
     "ChangeLog",
      "README.rdoc"
